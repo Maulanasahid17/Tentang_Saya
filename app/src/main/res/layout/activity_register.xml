@@ -5,10 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
-
+    tools:context=".Register">
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editUsernameRegis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -20,38 +19,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editPasswordRegis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintStart_toStartOf="@+id/editUsernameRegis"
+        app:layout_constraintTop_toBottomOf="@+id/editUsernameRegis" />
 
     <Button
-        android:id="@+id/ButtonLogin"
+        android:id="@+id/ButtonRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/editPasswordRegis"
+        app:layout_constraintTop_toBottomOf="@+id/editPasswordRegis" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="45dp"
         android:layout_height="25dp"
-        android:text="LOGIN"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText" />
+        android:text="REGISTER"
+        app:layout_constraintBottom_toTopOf="@+id/editUsernameRegis"
+        app:layout_constraintEnd_toEndOf="@+id/editUsernameRegis"
+        app:layout_constraintStart_toStartOf="@+id/editUsernameRegis" />
 
-    <TextView
-        android:id="@+id/buttonRegis"
-        android:layout_width="80dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="8dp"
-        android:text="Register"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
